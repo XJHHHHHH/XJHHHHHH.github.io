@@ -23,20 +23,20 @@
   <meta name="description" content="java设计模式-单例模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单例模式">
-<meta property="og:url" content="https://xjhhhhhh.github.io/2021/08/27/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/index.html">
+<meta property="og:url" content="https://xjhhhhhh.github.io/2021/09/01/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="西瓜很甜のBlog">
 <meta property="og:description" content="java设计模式-单例模式">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="e:/blog/source_posts/单例模式/img_singleton_1.png">
-<meta property="article:published_time" content="2021-08-27T06:27:17.000Z">
-<meta property="article:modified_time" content="2021-11-25T07:13:15.070Z">
+<meta property="og:image" content="e:/blog/source/images/单例模式/img_singleton_1.png">
+<meta property="article:published_time" content="2021-09-01T06:27:17.000Z">
+<meta property="article:modified_time" content="2021-11-25T07:16:29.220Z">
 <meta property="article:author" content="西瓜很甜">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="设计模式">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="e:/blog/source_posts/单例模式/img_singleton_1.png">
+<meta name="twitter:image" content="e:/blog/source/images/单例模式/img_singleton_1.png">
 
-<link rel="canonical" href="https://xjhhhhhh.github.io/2021/08/27/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/">
+<link rel="canonical" href="https://xjhhhhhh.github.io/2021/09/01/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/">
 
 
 <script id="page-configurations">
@@ -172,7 +172,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xjhhhhhh.github.io/2021/08/27/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="https://xjhhhhhh.github.io/2021/09/01/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/assets/img/head.jpg">
@@ -195,14 +195,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-08-27 14:27:17" itemprop="dateCreated datePublished" datetime="2021-08-27T14:27:17+08:00">2021-08-27</time>
+              <time title="创建时间：2021-09-01 14:27:17" itemprop="dateCreated datePublished" datetime="2021-09-01T14:27:17+08:00">2021-09-01</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-11-25 15:13:15" itemprop="dateModified" datetime="2021-11-25T15:13:15+08:00">2021-11-25</time>
+                <time title="修改时间：2021-11-25 15:16:29" itemprop="dateModified" datetime="2021-11-25T15:16:29+08:00">2021-11-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -227,7 +227,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>863</span>
+              <span>897</span>
             </span>
             <div class="post-description">java设计模式-单例模式</div>
 
@@ -258,11 +258,14 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingleTonTest1</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SingleTonTest1 singleTonTest1;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SingleTonTest1</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SingleTonTest1 <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (singleTonTest1 ==<span class="keyword">null</span>)</span><br><span class="line">            singleTonTest1 = <span class="keyword">new</span> SingleTonTest1();</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> singleTonTest1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>在多线程环境下测试</p>
+<p>在多线程环境下测试，使用1000个线程测试</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                    System.out.println(SingleTonTest1.getInstance());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;).start();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="E:\blog\source_posts\单例模式\img_singleton_1.png"></p>
+<blockquote>
+<p>如图：可能会创建多个实例，没有达到单例的效果</p>
+</blockquote>
+<p><img src="E:\blog\source\images\单例模式\img_singleton_1.png"></p>
 
     </div>
 
@@ -293,7 +296,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://xjhhhhhh.github.io/2021/08/27/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/" title="单例模式">https://xjhhhhhh.github.io/2021/08/27/单列模式/</a>
+    <a href="https://xjhhhhhh.github.io/2021/09/01/%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F/" title="单例模式">https://xjhhhhhh.github.io/2021/09/01/单列模式/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -326,12 +329,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/07/16/my-first-blog/" rel="prev" title="第一篇博客">
-      <i class="fa fa-chevron-left"></i> 第一篇博客
+    <a href="/2021/08/27/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/" rel="prev" title="代理模式">
+      <i class="fa fa-chevron-left"></i> 代理模式
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/08/27/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/" rel="next" title="代理模式">
-      代理模式 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/11/03/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" rel="next" title="二分查找">
+      二分查找 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
