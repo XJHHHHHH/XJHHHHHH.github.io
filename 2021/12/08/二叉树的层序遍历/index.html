@@ -20,21 +20,21 @@
     var CONFIG = {"hostname":"xjhhhhhh.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="算法——二分查找">
+  <meta name="description" content="二叉树的层序遍历-广度优先">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二分查找">
-<meta property="og:url" content="https://xjhhhhhh.github.io/2021/11/03/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/index.html">
+<meta property="og:title" content="二叉树的层序遍历">
+<meta property="og:url" content="https://xjhhhhhh.github.io/2021/12/08/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86/index.html">
 <meta property="og:site_name" content="西瓜很甜のBlog">
-<meta property="og:description" content="算法——二分查找">
+<meta property="og:description" content="二叉树的层序遍历-广度优先">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-11-03T11:04:31.000Z">
-<meta property="article:modified_time" content="2021-12-08T02:39:18.321Z">
+<meta property="article:published_time" content="2021-12-08T07:47:30.999Z">
+<meta property="article:modified_time" content="2021-12-08T08:08:28.076Z">
 <meta property="article:author" content="西瓜很甜">
 <meta property="article:tag" content="算法">
-<meta property="article:tag" content="二分查找">
+<meta property="article:tag" content="二叉树">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://xjhhhhhh.github.io/2021/11/03/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">
+<link rel="canonical" href="https://xjhhhhhh.github.io/2021/12/08/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>二分查找 | 西瓜很甜のBlog</title>
+  <title>二叉树的层序遍历 | 西瓜很甜のBlog</title>
   
 
 
@@ -170,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xjhhhhhh.github.io/2021/11/03/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">
+    <link itemprop="mainEntityOfPage" href="https://xjhhhhhh.github.io/2021/12/08/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/assets/img/head.jpg">
@@ -183,7 +183,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          二分查找
+          二叉树的层序遍历
         </h1>
 
         <div class="post-meta">
@@ -192,16 +192,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-11-03 19:04:31" itemprop="dateCreated datePublished" datetime="2021-11-03T19:04:31+08:00">2021-11-03</time>
+              <time title="创建时间：2021-12-08 15:47:30 / 修改时间：16:08:28" itemprop="dateCreated datePublished" datetime="2021-12-08T15:47:30+08:00">2021-12-08</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-08 10:39:18" itemprop="dateModified" datetime="2021-12-08T10:39:18+08:00">2021-12-08</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -225,9 +219,9 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
+              <span>1.5k</span>
             </span>
-            <div class="post-description">算法——二分查找</div>
+            <div class="post-description">二叉树的层序遍历-广度优先</div>
 
         </div>
       </header>
@@ -238,29 +232,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><blockquote>
-<p>二分查找</p>
-<p>排序数组的搜索问题，优先想到二分查找</p>
-<p>例题：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-search/">https://leetcode-cn.com/problems/binary-search/</a></p>
+        <h2 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h2><p>层序遍历与 前、中、后序遍历不一样；层序遍历是 一层一层遍历完 再遍历下一层；前、中、后序 是一个节点遍历到底 为null。</p>
+<p>层序遍历需要借助 队列的数据结构 遍历，先进先出的特点</p>
+<h2 id="例题一"><a href="#例题一" class="headerlink" title="例题一"></a>例题一</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-level-order-traversal/">102.二叉树的层序遍历</a>  </p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">写法一：left&lt;<span class="function">right</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>,right = nums.length;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">            <span class="keyword">int</span> middle = left + (right-left)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[middle]&gt;target)&#123;</span><br><span class="line">                <span class="comment">//如果中间索引对应值 &gt; target,说明 对应值在 middle左侧</span></span><br><span class="line">                right = middle;</span><br><span class="line">                <span class="comment">//改变搜索区间，将二分区间 右边界 right=中间值 middle</span></span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(nums[middle]&lt;target)&#123;</span><br><span class="line">                <span class="comment">//否则在左边</span></span><br><span class="line">                left = middle+<span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">return</span> middle;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>用一个队列 queue 存储节点，只要队列不为 空，就开始遍历</p>
+<p>取出队列中节点的 个数 int size = queue.size() ，代表这一层 节点的个数。每次 出队列 一个节点，判断 该节点左右子数 是否为null,如果不为 null 先将左子数 推进队列，再推进右子树进队列。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; resultList = <span class="keyword">new</span> ArrayList&lt;List&lt;Integer&gt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; levelOrder(TreeNode root) &#123;</span><br><span class="line">        Queue&lt;TreeNode&gt; queue = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(root==<span class="keyword">null</span>) </span><br><span class="line">            <span class="keyword">return</span> resultList;</span><br><span class="line"></span><br><span class="line">        queue.offer(root);</span><br><span class="line">        <span class="keyword">while</span>(!queue.isEmpty())&#123;</span><br><span class="line">            List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">            <span class="keyword">int</span> len = queue.size();</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">while</span>(len&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                TreeNode node = queue.poll();</span><br><span class="line">                list.add(node.val);</span><br><span class="line">                <span class="keyword">if</span>(node.left!=<span class="keyword">null</span>) queue.add(node.left);</span><br><span class="line">                <span class="keyword">if</span>(node.right!=<span class="keyword">null</span>) queue.add(node.right);</span><br><span class="line">                len--;</span><br><span class="line">            &#125;</span><br><span class="line">            resultList.add(list);</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">return</span> resultList;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>需要注意的是</p>
-<p>1.循环条件while（）中：何时用 left &lt; right 何时用 left &lt;= right</p>
-<p>2.改变区间边界时：是 right = middle -1；还是 right = middle</p>
-<p>其实这和我们搜索的区间 左右边界 是否 开闭 有关</p>
-<p>例如本题，我们是 right = nums.length;赋值的是 数组的整个长度，而数组的索引有效长度为 nums.length -1;</p>
-<blockquote>
-<p>当不 -1 时：区间为 【0，nums.lenght );nums.length 无效，所以 left &lt;=right 是取不到的；nums[middle]&gt;target 时 ，改变区间 右边界 right = middle，也是取不到，不用 middle +1</p>
-<p>当-1 时：区间为 【0，nums.length -1 ]  ,  nums.length-1 是有效的 索引，能取到;所以 left &lt;= right, left=right时有意义；改变区间，right = middle -1，因为middle 对应值 不可能==target，直接 将 right = middle -1，middle 的前一个索引。</p>
-</blockquote>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">写法二：left &lt;= <span class="function">right </span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>,right = nums.length-<span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span>(left&lt;=right)&#123;</span><br><span class="line">            <span class="keyword">int</span> middle = left + (right-left)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[middle]&gt;target)&#123;</span><br><span class="line">                right = middle - <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(nums[middle]&lt;target)&#123;</span><br><span class="line">                left = middle+<span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">return</span> middle;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>left + (right - left ) / 2 ,为了防止溢出，  等价于 (left + right) /2</p>
+
+<h2 id="例题二"><a href="#例题二" class="headerlink" title="例题二"></a>例题二</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/">515,在每个树行中找最大值</a></p>
 </blockquote>
+<p>也是用 队列实现，遍历每一层，比较最大值即可</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">largestValues</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(root==<span class="keyword">null</span>) <span class="keyword">return</span> list;</span><br><span class="line"></span><br><span class="line">        Deque&lt;TreeNode&gt; deque = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        deque.offer(root);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(!deque.isEmpty())&#123;</span><br><span class="line">            <span class="keyword">int</span> size = deque.size();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> max = Integer.MIN_VALUE;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;size;i++)&#123;</span><br><span class="line">                TreeNode node = deque.poll();</span><br><span class="line">                max = Math.max(max,node.val);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span>(node.left!=<span class="keyword">null</span>) deque.offer(node.left);</span><br><span class="line">                <span class="keyword">if</span>(node.right!=<span class="keyword">null</span>) deque.offer(node.right);</span><br><span class="line">            &#125;</span><br><span class="line">            list.add(max);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> list;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -291,7 +279,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://xjhhhhhh.github.io/2021/11/03/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="二分查找">https://xjhhhhhh.github.io/2021/11/03/二分查找/</a>
+    <a href="https://xjhhhhhh.github.io/2021/12/08/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86/" title="二叉树的层序遍历">https://xjhhhhhh.github.io/2021/12/08/二叉树的层序遍历/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -315,7 +303,7 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag">算法</i></a>
-              <a href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" rel="tag"><i class="fa fa-tag">二分查找</i></a>
+              <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" rel="tag"><i class="fa fa-tag">二叉树</i></a>
           </div>
 
         
@@ -324,13 +312,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/09/01/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" rel="prev" title="单例模式">
-      <i class="fa fa-chevron-left"></i> 单例模式
+    <a href="/2021/11/27/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E4%B8%AD%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86/" rel="prev" title="二叉树的遍历-深度优先">
+      <i class="fa fa-chevron-left"></i> 二叉树的遍历-深度优先
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/11/05/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="next" title="双指针-有序数组的平方">
-      双指针-有序数组的平方 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -389,7 +374,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">适用场景</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="nav-number">1.</span> <span class="nav-text">层序遍历</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98%E4%B8%80"><span class="nav-number">2.</span> <span class="nav-text">例题一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98%E4%BA%8C"><span class="nav-number">3.</span> <span class="nav-text">例题二</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
