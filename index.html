@@ -342,7 +342,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-13 00:50:34" itemprop="dateModified" datetime="2021-12-13T00:50:34+08:00">2021-12-13</time>
+                <time title="修改时间：2021-12-13 00:52:55" itemprop="dateModified" datetime="2021-12-13T00:52:55+08:00">2021-12-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -372,33 +372,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="Java内存模型"><a href="#Java内存模型" class="headerlink" title="Java内存模型"></a>Java内存模型</h2><p>Java程序在 JVM 中执行时，大致可以将 JVM 管理的 内存分为五个不同的数据区 - 运行时数据区</p>
-<h3 id="五块区域"><a href="#五块区域" class="headerlink" title="五块区域"></a>五块区域</h3><ul>
-<li><p>程序计数器</p>
-<p>程序计数器是每个Java线程私有的-每一个线程都有自己独立程序计数器。程序计数器控制着 程序 执行的流程</p>
-<p>因为每个线程不是从头到尾执行完的，操作系统会 切换执行的线程。如果某个线程被切换，当再次执行该线程时需要程序计数器恢复上次执行的位置。</p>
-</li>
-<li><p>本地方法栈</p>
-<p>线程私有，是JVM执行本地 Native方法时的栈，不是执行的Java方法。</p>
-<p>HotSpot虚拟机是将 虚拟机栈和 本地方法栈合在一起的。</p>
-</li>
-<li><p>虚拟机栈-栈</p>
-<p>也就是通常所说的栈内存，是每个线程私有的。每个线程执行-执行完Java方法时 对应着一个 栈帧的 入栈和出栈。该栈帧中存储着 方法的：局部变量表、操作数栈、动态链接、方法出口等信息。</p>
-<p>局部变量表存储的是编译器可知的 各种基本数据类型-八大基本数据类型 和 对象的引用。</p>
-<p>这些数据类型存放在局部变量表中可以用局部变量槽（Slot）表示，一个变量对应一个 槽。long 和 double 类型会占用两个槽。当方法被调用时 局部变量表中 槽的数量是确定的 - 在编译期就可以确定这些变量。</p>
-<p>虚拟机栈可能会出现两种异常：</p>
-<p>​    StackOverFlowError：JVM栈深度 &lt; 线程执行方法所需的深度</p>
-<p>​    OutOfMemoryError：栈扩展无法申请到足够的内存</p>
-</li>
-<li><p>堆（Heap）</p>
-<p>几乎所有新创建对象实例分配内存 都在堆，是线程共享的区域</p>
-<p>1</p>
-</li>
-<li><p>方法区（No-Heap）</p>
-<p>也是线程共享的区域，JDK8 叫 元空间</p>
-</li>
-</ul>
-
+          <p>JVM-Java内存模型</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/30/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
